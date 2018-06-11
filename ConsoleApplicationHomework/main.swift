@@ -8,5 +8,10 @@
 
 import Foundation
 
-//task1()
+task0()
+task1()
+task2()
 task4()
+task3()
+task4()
+//task5()

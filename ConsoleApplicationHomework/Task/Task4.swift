@@ -59,5 +59,4 @@ Now please enter the first number.
             print("Are you sure you've entered a number?")
         }
     }
-
 }
