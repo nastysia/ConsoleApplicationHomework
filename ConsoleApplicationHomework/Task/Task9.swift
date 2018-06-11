@@ -7,23 +7,21 @@
 //
 
 import Foundation
-/*
-func task(){
+
+func task9(){
     print("Task 9.")
     print("Введи своє ім'я.")
-    if let inputName = readLine() {
-        if let name = String?(inputName) {
-            switch name.count {
-            case 2..<20:
-                print("Дякую!")
-            default:
-                print("Ім'я введено невірно. Спробуй ще!")
-            }
-            
-        } else {
-            print ("А це точно ім'я?")
+    if let name = readLine() {
+        switch name.count {
+        case 2..<20:
+            print("Дякую!")
+        default:
+            print("Ім'я введено невірно. Спробуй ще!")
         }
+        
+    } else {
+        print ("А це точно ім'я?")
     }
 }
 
-*/
+
