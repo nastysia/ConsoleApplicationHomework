@@ -17,5 +17,5 @@ import Foundation
 //task5()
 //task6()
 //task7()
-//task8()
-task9()
+task8()
+//task9()
