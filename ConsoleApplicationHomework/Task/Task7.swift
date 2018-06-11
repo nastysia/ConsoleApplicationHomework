@@ -6,8 +6,9 @@
 //  Copyright © 2018 Anastasia. All rights reserved.
 //
 
-import Foundation
 /*
+import Foundation
+
 func task7(){
     print("Task 7.")
     print("А ну-ка циферку введи!")
@@ -18,23 +19,27 @@ func task7(){
                 if let tsyferka2 = Double(optionalTsyferka2) {
                     print("Маладца! А тепер введи символ арифметичної операції (+, -, /, *).")
                     if let mathematicalOperation = readLine() {
-                        if let mathOperation = String(mathematicalOperation) {
-                            if mathOperation == "+" {
-                                print (\(tsyferka1) + (\(tsyferka2)))
+                        if let mathOperation = mathematicalOperation {
+                            switch mathOperation {
+                            case ""+" :
+                             print("\(tsyferka1) + \(tsyferka2)")
+                                
                             }
                         }
                     }
-                    
                 }
-                else {
-                    print("Ааа, якась кака! То не циферка! Я казала циферку!")
-                }
+                
             }
-            
+            else {
+                print("Ааа, якась кака! То не циферка! Я казала циферку!")
+            }
         }
-        else {
-            print("Ааа, якась кака! То не циферка! Я казала циферку!")
-        }
+        
+    }
+    else {
+        print("Ааа, якась кака! То не циферка! Я казала циферку!")
     }
 }
-*/
+
+ */
+

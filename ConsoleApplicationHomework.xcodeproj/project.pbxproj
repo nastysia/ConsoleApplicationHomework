@@ -16,6 +16,8 @@
 		5D97AF8620CE5C4C0091D1AC /* Task5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D97AF8520CE5C4C0091D1AC /* Task5.swift */; };
 		5D97AF8820CE5C5D0091D1AC /* Task6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D97AF8720CE5C5D0091D1AC /* Task6.swift */; };
 		5D97AF8A20CE5F950091D1AC /* Task7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D97AF8920CE5F950091D1AC /* Task7.swift */; };
+		5DF9080720CE87B3006E043F /* Task8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF9080620CE87B3006E043F /* Task8.swift */; };
+		5DF9080920CE8D56006E043F /* Task9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF9080820CE8D56006E043F /* Task9.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +43,8 @@
 		5D97AF8520CE5C4C0091D1AC /* Task5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task5.swift; sourceTree = "<group>"; };
 		5D97AF8720CE5C5D0091D1AC /* Task6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task6.swift; sourceTree = "<group>"; };
 		5D97AF8920CE5F950091D1AC /* Task7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task7.swift; sourceTree = "<group>"; };
+		5DF9080620CE87B3006E043F /* Task8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task8.swift; sourceTree = "<group>"; };
+		5DF9080820CE8D56006E043F /* Task9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task9.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,8 @@
 				5D97AF8520CE5C4C0091D1AC /* Task5.swift */,
 				5D97AF8720CE5C5D0091D1AC /* Task6.swift */,
 				5D97AF8920CE5F950091D1AC /* Task7.swift */,
+				5DF9080620CE87B3006E043F /* Task8.swift */,
+				5DF9080820CE8D56006E043F /* Task9.swift */,
 			);
 			path = Task;
 			sourceTree = "<group>";
@@ -152,6 +158,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D97AF8A20CE5F950091D1AC /* Task7.swift in Sources */,
+				5DF9080720CE87B3006E043F /* Task8.swift in Sources */,
+				5DF9080920CE8D56006E043F /* Task9.swift in Sources */,
 				5D97AF8420CE5C320091D1AC /* Task3.swift in Sources */,
 				4D51C7D720CBE7E200474F49 /* Task4.swift in Sources */,
 				5D97AF8620CE5C4C0091D1AC /* Task5.swift in Sources */,
