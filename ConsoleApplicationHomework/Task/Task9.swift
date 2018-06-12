@@ -13,8 +13,8 @@ func task9(){
     print("Введи своє ім'я.")
     if let name = readLine() {
         switch name.count {
-        case 2..<20:
-            print("Дякую!")
+        case 3..<19:
+            print("Привіт, \(name)!")
         default:
             print("Ім'я введено невірно. Спробуй ще!")
         }

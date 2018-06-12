@@ -7,6 +7,7 @@
 //
 
 /*
+
 import Foundation
 
 func task7(){
@@ -21,7 +22,7 @@ func task7(){
                     if let mathematicalOperation = readLine() {
                         if let mathOperation = mathematicalOperation {
                             switch mathOperation {
-                            case ""+" :
+                            case "+" :
                              print("\(tsyferka1) + \(tsyferka2)")
                                 
                             }
@@ -41,5 +42,5 @@ func task7(){
     }
 }
 
- */
+*/
 
