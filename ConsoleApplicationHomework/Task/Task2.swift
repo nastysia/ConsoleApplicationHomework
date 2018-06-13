@@ -11,10 +11,11 @@ func task2(){
     print("Task 2.")
     print ("Please enter two numbers.")
     guard let firstnumber = readLine(), let secondNumber = readLine() else{
+        print("Fatal error")
         return
     }
     guard let number1 = Int(firstnumber), let number2 = Int(secondNumber) else{
-         print("Are you sure you've entered a number?")
+        print("Are you sure you've entered a number?")
         return
     }
     
@@ -24,12 +25,10 @@ func task2(){
     if sum > multiplication {
         print("The sum: \(sum) is superior than multiplication: \(multiplication).")
     }
-  
-    else if sum > multiplication {
+    else if sum < multiplication {
         print("The multiplication: \(multiplication) is superior than multiplication: \(multiplication).")
     }
-    
-    else if sum == multiplication {
+    else{
         print("The sum: \(sum) is equal too multiplication: \(multiplication)")
     }
    
