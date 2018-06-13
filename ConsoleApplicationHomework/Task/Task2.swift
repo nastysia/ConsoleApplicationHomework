@@ -9,33 +9,29 @@
 import Foundation
 func task2(){
     print("Task 2.")
-    print ("Please enter some number.")
-    if let oneNumber = readLine() {
-        if let firstNumber = Int(oneNumber) {
-            print ("""
-                Thank you for entering a number \(firstNumber).
-                Please enter second number.
-                """)
-            if let otherNumber = readLine() {
-                if let secondNumber = Int(otherNumber) {
-                    print("Thank you for entering a second number \(secondNumber).")
-                    let sum = firstNumber + secondNumber
-                    let multiplication = firstNumber * secondNumber
-                    if sum > multiplication {
-                        print("The sum: \(sum) is higher, than the multiplication: \(multiplication).")
-                    }
-                    else if multiplication > sum {
-                        print("The multiplication: \(multiplication) is higher, than the sum: \(sum).")
-                    }
-                    else if multiplication == sum {
-                        print("The sum: \(sum) is equal to the multiplication: \(multiplication).")
-                    }
-                }
-            }
-            
-        }
-        else {
-            print("Are you sure you've entered a number?")
-        }
+    print ("Please enter two numbers.")
+    guard let firstnumber = readLine(), let secondNumber = readLine() else{
+        return
     }
+    guard let number1 = Int(firstnumber), let number2 = Int(secondNumber) else{
+         print("Are you sure you've entered a number?")
+        return
+    }
+    
+    let sum = number1 + number2
+    let multiplication = number1 * number2
+    
+    if sum > multiplication {
+        print("The sum: \(sum) is superior than multiplication: \(multiplication).")
+    }
+  
+    else if sum > multiplication {
+        print("The multiplication: \(multiplication) is superior than multiplication: \(multiplication).")
+    }
+    
+    else if sum == multiplication {
+        print("The sum: \(sum) is equal too multiplication: \(multiplication)")
+    }
+   
 }
+
