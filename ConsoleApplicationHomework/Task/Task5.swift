@@ -6,7 +6,7 @@
 //  Copyright © 2018 Anastasia. All rights reserved.
 //
 
-/*
+
 import Foundation
 func task5(){
     print ("Task 5.")
@@ -19,9 +19,9 @@ func task5(){
     if integerNumber > 0 {
         print (integerNumber)
     }
-    if integerNumber < 0 {
-    print (- "/(integerNumber)")
+    else if integerNumber < 0 {
+    let modul = -integerNumber
+        print (modul)
     }
-    
 }
- */
+ 
