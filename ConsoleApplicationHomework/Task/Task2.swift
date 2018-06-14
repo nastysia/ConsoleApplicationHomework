@@ -26,7 +26,7 @@ func task2(){
         print("The sum: \(sum) is superior than multiplication: \(multiplication).")
     }
     else if sum < multiplication {
-        print("The multiplication: \(multiplication) is superior than multiplication: \(multiplication).")
+        print("The multiplication: \(multiplication) is superior than sum: \(multiplication).")
     }
     else{
         print("The sum: \(sum) is equal too multiplication: \(multiplication)")

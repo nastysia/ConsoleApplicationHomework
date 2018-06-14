@@ -11,16 +11,16 @@ import Foundation
 func task9(){
     print("Task 9.")
     print("Введи своє ім'я.")
-    if let name = readLine() {
-        switch name.count {
-        case 3..<19:
-            print("Привіт, \(name)!")
-        default:
-            print("Ім'я введено невірно. Спробуй ще!")
-        }
-        
-    } else {
+    guard let name = readLine() else {
         print ("А це точно ім'я?")
+        
+        return
+    }
+    switch name.count {
+    case 3..<19:
+        print("Привіт, \(name)!")
+    default:
+        print("Ім'я введено невірно. Спробуй ще!")
     }
 }
 

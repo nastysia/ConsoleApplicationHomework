@@ -17,7 +17,7 @@ func task4() {
     }
     
     guard let firstnumber = Int(fisrtInputedNumber), let secondnumber = Int(secondInputedNumber), let thirdnumber =  Int(thirdInputedNumber) else {
-        print("Are you sure you've entered a number?")
+        print("Are you sure you've entered three numbers?")
         return
     }
     
@@ -33,19 +33,3 @@ func task4() {
     
         print(maxNumber)
 }
-
-/*
-if firstnumber == secondnumber == maxNumber {
-        maxNumber = firstnumber
-    }
-
-    
-    else if firstnumber == secondnumber && firstnumber > thirdnumber {
-        print(firstnumber)
-    }
-    
-    else if secondnumber == thirdnumber && secondnumber > firstnumber {
-        print(secondnumber)
-    }
- */
-

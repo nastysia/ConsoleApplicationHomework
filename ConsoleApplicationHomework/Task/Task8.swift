@@ -12,16 +12,15 @@ func task8(){
     print("Task 8.")
     
     print("Напиши число від нуля до трьох.")
-    guard let newNumber = readLine()  else {
+    guard let newNumber = readLine(), let number = Int(newNumber) else{
+          print("А це точно число?")
         return
     }
     
-    guard let number = Int(newNumber) else {
-        print("А це точно число від 0 до 3?")
+    guard number >= 0 && number <= 3 else {
+      print("А це точно число від 0 до 3?")
         return
-    }
-    
-    if number >= 0 && number <= 3 {
+        
     }
     if number >= 1{
         print(number)

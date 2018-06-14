@@ -13,22 +13,16 @@ func task3(){
     guard let newNumber = readLine(), let anotherNumber = readLine() else {
         return
     }
-    guard let enteredNumber = Int(newNumber), let nextnumber = Int(anotherNumber) else {
-        print("Is this a number?")
+    guard let number1 = Int(newNumber), let number2 = Int(anotherNumber) else {
+        print("Are these two numbers?")
         return
     }
     
-    if enteredNumber > nextnumber {
-        print("\(enteredNumber) is superior to \(nextnumber).")
-    }
-    else if enteredNumber < nextnumber {
-        print("\(enteredNumber) is inferior to \(nextnumber).")
-    }
-    else if enteredNumber == nextnumber {
-        print("\(enteredNumber) is equal to \(nextnumber).")
+    var maxNumber = number1
+    if number2 > maxNumber{
+    maxNumber = number2
     }
     
+    print(maxNumber)
 }
-
-
 

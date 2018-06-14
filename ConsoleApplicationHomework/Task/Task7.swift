@@ -12,7 +12,7 @@ func task7(){
     print("Task 7.")
     print("А ну-ка дві циферки введи і символ математичної операції (+, -, /, *)!")
     
-    guard let optionalTsyferka1 = readLine(), let optionalTsyferka2 = readLine(), var math = readLine() else {
+    guard let optionalTsyferka1 = readLine(), let optionalTsyferka2 = readLine(), let math = readLine() else {
         return
     }
     

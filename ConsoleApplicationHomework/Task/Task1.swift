@@ -10,30 +10,17 @@ import Foundation
 
 func task1(){
     print("Task 1.")
-    print ("Please enter some number.")
-    guard let oneNumber = readLine() else{
+    print ("Введи два числа")
+    guard let oneNumber = readLine(), let otherNumber = readLine() else{
         return
     }
     
-    guard let firstNumber = Int(oneNumber) else{
-        print("Are you sure you've entered a number?")
+    guard let number1 = Int(oneNumber), let number2 = Int(otherNumber) else{
+        print("А то точно два числа?")
         return
     }
     
-    print ("Thank you for entering a number \(firstNumber). Please enter second number.")
-    
-    guard let otherNumber = readLine() else{
-        return
-    }
-    
-    
-    guard let secondNumber = Int(otherNumber) else{
-        print("Are you sure you've entered a number?")
-        return
-    }
-    
-    let sum = firstNumber + secondNumber
-    print("Thank you for entering a second number \(secondNumber).The sum of two numbers is \(sum).")
-
+    let sum = number1 + number2
+    print("Сума двох чисел \(sum).")
 
 }
