@@ -33,6 +33,9 @@ func task8(){
     if number >= 3{
         print(number)
     }
+    if number == 0{
+        print("Бублик!")
+    }
     
 }
 
