@@ -10,53 +10,42 @@ import Foundation
 
 
 func task4() {
-    print("Task4")
-    print("""
-You have to enter three numbers.
-Now please enter the first number.
-""")
-    if let fisrtInputedNumber = readLine () {
-        if let firstnumber = Int(fisrtInputedNumber) {
-            print("""
-                Thanks.
-                Now, please enter the second number.
-                """)
-            
-            
-            if let secondInputedNumber = readLine() {
-                if let secondnumber = Int(secondInputedNumber) {
-                    print("""
-                Thanks.
-                Now, please enter the third number.
-                """)
-                    if let thirdInputedNumber = readLine() {
-                        if let thirdnumber =  Int(thirdInputedNumber) {
-                            print("Thanks.")
-                            
-                            var maxNumber = firstnumber
-                            
-                            if secondnumber > maxNumber {
-                                maxNumber = secondnumber
-                            }
-                            
-                            if thirdnumber > maxNumber {
-                                maxNumber = thirdnumber
-                            }
-                            
-                            print(maxNumber)
-                        }
-                        else {
-                            print("Are you sure you've entered a number?")
-                        }
-                    }
-                }
-                else {
-                    print("Are you sure you've entered a number?")
-                }
-            }
-        }
-        else {
-            print("Are you sure you've entered a number?")
-        }
+    print("Task 4")
+    print("Please enter three numbers.")
+    guard let fisrtInputedNumber = readLine (),  let secondInputedNumber = readLine(),  let thirdInputedNumber = readLine() else {
+        return
     }
+    
+    guard let firstnumber = Int(fisrtInputedNumber), let secondnumber = Int(secondInputedNumber), let thirdnumber =  Int(thirdInputedNumber) else {
+        print("Are you sure you've entered a number?")
+        return
+    }
+    
+    var maxNumber = firstnumber
+    
+    if secondnumber > maxNumber {
+        maxNumber = secondnumber
+    }
+    
+    if thirdnumber > maxNumber {
+        maxNumber = thirdnumber
+    }
+    
+        print(maxNumber)
 }
+
+/*
+if firstnumber == secondnumber == maxNumber {
+        maxNumber = firstnumber
+    }
+
+    
+    else if firstnumber == secondnumber && firstnumber > thirdnumber {
+        print(firstnumber)
+    }
+    
+    else if secondnumber == thirdnumber && secondnumber > firstnumber {
+        print(secondnumber)
+    }
+ */
+

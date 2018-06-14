@@ -17,7 +17,7 @@ func task2(){
          print("Are you sure you've entered a number?")
         return
     }
-    
+
     let sum = number1 + number2
     let multiplication = number1 * number2
     
@@ -32,6 +32,6 @@ func task2(){
     else if sum == multiplication {
         print("The sum: \(sum) is equal too multiplication: \(multiplication)")
     }
-   
+       
 }
 

@@ -6,41 +6,44 @@
 //  Copyright © 2018 Anastasia. All rights reserved.
 //
 
-/*
-
 import Foundation
 
 func task7(){
     print("Task 7.")
-    print("А ну-ка циферку введи!")
-    if let optionalTsyferka1 = readLine() {
-        if let tsyferka1 = Double(optionalTsyferka1) {
-            print("Маладца! А ну-ка ще одна циферка?")
-            if let optionalTsyferka2 = readLine() {
-                if let tsyferka2 = Double(optionalTsyferka2) {
-                    print("Маладца! А тепер введи символ арифметичної операції (+, -, /, *).")
-                    if let mathematicalOperation = readLine() {
-                        if let mathOperation = mathematicalOperation {
-                            switch mathOperation {
-                            case "+" :
-                             print("\(tsyferka1) + \(tsyferka2)")
-                                
-                            }
-                        }
-                    }
-                }
-                
-            }
-            else {
-                print("Ааа, якась кака! То не циферка! Я казала циферку!")
-            }
-        }
-        
+    print("А ну-ка дві циферки введи і символ математичної операції (+, -, /, *)!")
+    
+    guard let optionalTsyferka1 = readLine(), let optionalTsyferka2 = readLine(), var math = readLine() else {
+        return
     }
-    else {
+    
+    guard let tsyferka1 = Double(optionalTsyferka1), let tsyferka2 = Double(optionalTsyferka2) else {
         print("Ааа, якась кака! То не циферка! Я казала циферку!")
+        return
+    }
+    
+    switch math {
+    case "+":
+        let sum = tsyferka1 + tsyferka2
+        print(sum)
+   
+    case "-":
+        let subtraction = tsyferka1 - tsyferka1
+        print(subtraction)
+        
+    case "*":
+        let multiplication = tsyferka1 * tsyferka2
+        print(multiplication)
+        
+    case "/":
+        let division = tsyferka2 / tsyferka2
+        print(division)
+        
+    default:
+        print("То не символ математичної операції.")
+        
     }
 }
 
-*/
+
+
 

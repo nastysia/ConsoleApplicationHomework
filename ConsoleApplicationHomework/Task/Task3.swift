@@ -9,31 +9,26 @@
 import Foundation
 func task3(){
     print("Task 3.")
-    print("Please enter a number.")
-    if let newNumber = readLine() {
-        if let enteredNumber = Int(newNumber) {
-            print ("""
-                Thanks for entering \(enteredNumber).
-                Please enter the second number.
-                """)
-            if let anotherNumber = readLine() {
-                if let nextnumber = Int(anotherNumber) {
-                    print("Thanks.")
-                    if enteredNumber > nextnumber {
-                        print("\(enteredNumber) is superior to \(nextnumber).")
-                    }
-                    else if enteredNumber < nextnumber {
-                        print("\(enteredNumber) is inferior to \(nextnumber).")
-                    }
-                    else if enteredNumber == nextnumber {
-                        print("\(enteredNumber) is equal to \(nextnumber).")
-                    }
-                    
-                }
-            }
-            
-        } else {
-            print("Is this a number?")
-        }
+    print("Please enter two numbers.")
+    guard let newNumber = readLine(), let anotherNumber = readLine() else {
+        return
     }
+    guard let enteredNumber = Int(newNumber), let nextnumber = Int(anotherNumber) else {
+        print("Is this a number?")
+        return
+    }
+    
+    if enteredNumber > nextnumber {
+        print("\(enteredNumber) is superior to \(nextnumber).")
+    }
+    else if enteredNumber < nextnumber {
+        print("\(enteredNumber) is inferior to \(nextnumber).")
+    }
+    else if enteredNumber == nextnumber {
+        print("\(enteredNumber) is equal to \(nextnumber).")
+    }
+    
 }
+
+
+
