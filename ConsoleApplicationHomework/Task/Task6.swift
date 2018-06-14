@@ -6,9 +6,10 @@
 //  Copyright © 2018 Anastasia. All rights reserved.
 //
 
+/*
 import Foundation
 
-func task6(){
+func task6() throws {
     print("Task 6.")
     print("Введи два числа.")
     guard let firstInsertedNumber = readLine(), let secondInsertedNumber = readLine() else {
@@ -16,17 +17,14 @@ func task6(){
     }
     
     guard let number1 = Double(firstInsertedNumber), let number2 = Double(secondInsertedNumber) else {
-        print("А то ващє число?")
+        throw number1 != 0, number2 != 0   {
+            print("Якщо введеш нуль, то буде тобі бублик!")
+        } 
         return
     }
-    
-    guard number1 != 0, number2 != 0  else {
-        print("Якщо введеш нуль, то буде тобі бублик!")
-        return
-    }
-    
-    
+   
     let division = number1 / number2
     print ("Якщо поділити перше число на друге то вийде \(division)")
 }
 
+*/
