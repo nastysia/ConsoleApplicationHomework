@@ -9,8 +9,9 @@
 
 import Foundation
 
+/*
 
-func task6() {} /*throws {
+func task6()throws {
     
     print("Task 6.")
     print("Введи два числа.")
@@ -18,7 +19,7 @@ func task6() {} /*throws {
     if let input = readLine(){
         let inputNumbers = input.split(separator:" ")
         if let number1 = Int(inputNumbers[0]), let number2 = Int(inputNumbers[1]) {
-            
+        
             if number1 != 0 || number2 != 0 {
                 print("Якщо введеш нуль, то буде тобі бублик!")
             }
@@ -41,6 +42,6 @@ func task6() {} /*throws {
     
 }
  
-
 */
+
 
