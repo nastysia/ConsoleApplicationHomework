@@ -10,17 +10,11 @@ import Foundation
 
 func task1(){
     print("Task 1.")
-    print ("Введи два числа")
-    guard let oneNumber = readLine(), let otherNumber = readLine() else{
-        return
+    print ("Введи одне число, натисни пробіл, і тоді друге число. Потім натисни Enter.")
+    if let input = readLine(){
+        let inputNumbers = input.split(separator:" ")
+        if let number1 = Int(inputNumbers[0]), let number2 = Int(inputNumbers[1]){
+            print(number1 + number2)
+        }
     }
-    
-    guard let number1 = Int(oneNumber), let number2 = Int(otherNumber) else{
-        print("А то точно два числа?")
-        return
-    }
-    
-    let sum = number1 + number2
-    print("Сума двох чисел \(sum).")
-
 }

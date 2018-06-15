@@ -9,28 +9,32 @@
 import Foundation
 func task2(){
     print("Task 2.")
-    print ("Please enter two numbers.")
-    guard let firstnumber = readLine(), let secondNumber = readLine() else{
-        print("Fatal error")
-        return
-    }
-    guard let number1 = Int(firstnumber), let number2 = Int(secondNumber) else{
-        print("Are you sure you've entered a number?")
-        return
-    }
-
-    let sum = number1 + number2
-    let multiplication = number1 * number2
+    print ("Please enter two numbers (one and second via space). Then press enter.")
     
-    if sum > multiplication {
-        print("The sum: \(sum) is superior than multiplication: \(multiplication).")
+    if let input = readLine(){
+        let inputNumbers = input.split(separator: " ")
+        if let number1 = Int(inputNumbers[0]), let number2 = Int(inputNumbers[1]) {
+        let sum = number1 + number2
+        let multiplication = number1 * number2
+            if sum > multiplication {
+                print("The sum: \(sum) is superior than multiplication: \(multiplication).")
+            }
+            else if sum < multiplication {
+                print("The multiplication: \(multiplication) is superior than sum: \(sum).")
+            }
+            else{
+                print("The sum: \(sum) is equal too multiplication: \(multiplication)")
+            }
+        }
+        else {
+            print("Are you sure you've entered a number?")
+        }
     }
-    else if sum < multiplication {
-        print("The multiplication: \(multiplication) is superior than sum: \(multiplication).")
-    }
-    else{
-        print("The sum: \(sum) is equal too multiplication: \(multiplication)")
-    }
-       
 }
+  
+
+
+    
+   
+
 

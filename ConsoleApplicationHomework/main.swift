@@ -8,6 +8,10 @@
 
 import Foundation
 
+enum TestTaskError: Error {
+    case  divisionByZero
+}
+
 //task0()
 //task1()
 //task2()
@@ -18,3 +22,9 @@ task6()
 //task7()
 //task8()
 //task9()
+
+do {
+    try task6()
+} catch TestTaskError.divisionByZero {
+    print("Fatal error: Division By Zero")
+}
