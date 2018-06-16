@@ -12,14 +12,12 @@ func task9(){
     print("Task 9.")
     print("Введи своє ім'я.")
     guard let name = readLine() else {
-        print ("А це точно ім'я?")
-        
         return
     }
-    switch name.count {
-    case 3..<19:
+    if name.count >= 2 && name.count <= 19 {
         print("Привіт, \(name)!")
-    default:
+    }
+    else {
         print("Ім'я введено невірно. Спробуй ще!")
     }
 }

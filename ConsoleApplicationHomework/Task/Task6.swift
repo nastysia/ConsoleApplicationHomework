@@ -16,7 +16,7 @@ func task6() throws {
     
     if let input = readLine(){
         let inputNumbers = input.split(separator:" ")
-        if let number1 = Int(inputNumbers[0]), let number2 = Int(inputNumbers[1]) {
+        if let number1 = Double(inputNumbers[0]), let number2 = Double(inputNumbers[1]) {
             guard number2 != 0 else {
                 throw TestTaskError.divisionByZero
             }

@@ -23,5 +23,8 @@ func task5(){
     let modul = -integerNumber
         print (modul)
     }
+    else {
+        print("Ааа! То ж бублик! Він ні додатній, ні від'ємний. Я ж казала додатнє чи від'ємне число!")
+    }
 }
  

@@ -8,20 +8,14 @@
 
 import Foundation
 
-func task7(){
+func task7() throws {
     print("Task 7.")
-    print("А ну-ка дві циферки введи через пробіл!")
+    print("А ну-ка введи дві циферки і символ математичної операції (+, -, /, *) -  все через пробіл!")
     
     if let input = readLine() {
         let inputNumbers = input.split(separator: " ")
-        if let tsyferka1 = Double(inputNumbers[0]), let tsyferka2 = Double(inputNumbers[1]){
-            
-            
-            print("А тепер введи символ математичної операції (+, -, /, *).")
-            
-            if let math = readLine(){
-                
-                
+        if let tsyferka1 = Double(inputNumbers[0]), let tsyferka2 = Double(inputNumbers[1]) {
+         let math = inputNumbers[2]
                 switch math {
                 case "+":
                     let sum = tsyferka1 + tsyferka2
@@ -36,14 +30,16 @@ func task7(){
                     print(multiplication)
                     
                 case "/":
-                    let division = tsyferka2 / tsyferka2
+                    guard tsyferka2 != 0 else {
+                        throw TestTaskError.divisionByZero
+                    }
+                    let division = tsyferka1 / tsyferka2
                     print(division)
                     
                 default:
                     print("То не символ математичної операції.")
                     
                 }
-            }
             
         } else {
             print("Ааа, якась кака! То не циферка! Я казала циферку!")
