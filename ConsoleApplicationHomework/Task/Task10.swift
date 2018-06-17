@@ -25,10 +25,12 @@ func task10() {
             //Варіант 2.
             var maxNumber = number1
             var minNumber = number2
+            
             if number2 > maxNumber {
                 maxNumber = number2
                 minNumber = number1
             }
+            
             print (minNumber, maxNumber)
             
             

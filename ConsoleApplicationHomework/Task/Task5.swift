@@ -16,15 +16,13 @@ func task5(){
         return
     }
     
-    if integerNumber > 0 {
-        print (integerNumber)
+    if integerNumber >= 0 {
+        print(integerNumber)
     }
-    else if integerNumber < 0 {
-    let modul = -integerNumber
-        print (modul)
+    else{
+        let modul = -integerNumber
+        print(modul)
     }
-    else {
-        print("Ааа! То ж бублик! Він ні додатній, ні від'ємний. Я ж казала додатнє чи від'ємне число!")
-    }
+ 
 }
  

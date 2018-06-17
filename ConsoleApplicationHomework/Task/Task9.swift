@@ -14,7 +14,7 @@ func task9(){
     guard let name = readLine() else {
         return
     }
-    if name.count >= 2 && name.count <= 19 {
+    if name.count >= 2 && name.count <= 20 {
         print("Привіт, \(name)!")
     }
     else {
