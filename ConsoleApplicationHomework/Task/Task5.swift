@@ -11,7 +11,7 @@ import Foundation
 func task5(){
     print ("Task 5.")
     print("Введи число, додатнє або від'ємне")
-    guard let number = readLine(), let integerNumber = Int(number) else {
+    guard let number = readLine(), let integerNumber = Int(number)  else {
         print("Are you sure you've entered a number?")
         return
     }
