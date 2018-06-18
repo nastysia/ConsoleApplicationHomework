@@ -14,19 +14,22 @@ func task6() throws {
     print("Task 6.")
     print("Введи два числа через пробіл.")
     
-    if let input = readLine(){
-        let inputNumbers = input.split(separator:" ")
-        if let number1 = Double(inputNumbers[0]), let number2 = Double(inputNumbers[1]) {
-            guard number2 != 0 else {
-                throw TestTaskError.divisionByZero
-            }
-            let division = number1 / number2
-            print(division)
-        } else {
-            print("А то точно число?")
-        }
+    guard let input = readLine() else {
+        return
     }
-}
+    let inputNumbers = input.split(separator:" ")
+    guard let number1 = Double(inputNumbers[0]), let number2 = Double(inputNumbers[1]) else {
+        print("А то точно число?")
+        return
+    }
+    guard number2 != 0 else {
+        throw TestTaskError.divisionByZero
+    }
+    let division = number1 / number2
+    print(division)
+} 
+
+
 
 
 
