@@ -8,7 +8,7 @@
 
 import Foundation
 
-func task12() {
+func task12(){
     print("Введи ціле число.")
     guard let inputNumber = readLine(), let n = Int(inputNumber) else {
         return

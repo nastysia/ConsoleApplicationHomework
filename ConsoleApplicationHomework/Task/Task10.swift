@@ -8,7 +8,7 @@
 
 import Foundation
 
-func task10() {
+func task10(){
     print ("Введи два цілі числа через пробіл.")
     guard let input = readLine() else {
         return

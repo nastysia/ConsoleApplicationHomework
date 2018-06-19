@@ -8,7 +8,7 @@
 
 import Foundation
 
-func task11()  { 
+func task11(){ 
     print ("Введи три цілі числа через пробіл.")
     guard let input = readLine() else {
         return
@@ -31,12 +31,11 @@ func task11()  {
     var minNumber = number1
     var inBetween = number2
     var maxNumber = number3
-    var sortedNumbers = [minNumber, inBetween, maxNumber]
     
     
     if number2 < minNumber {
         minNumber = number2 }
-    
+
     if number3 < minNumber {
         minNumber = number3
     }
@@ -45,12 +44,13 @@ func task11()  {
     
     
     
-    for inputNumbers in sortedNumbers {
+    
+
         print(inputNumbers)
     }
     
     
-}
+
 
 
 
