@@ -19,6 +19,7 @@
 		5D97AF8620CE5C4C0091D1AC /* Task5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D97AF8520CE5C4C0091D1AC /* Task5.swift */; };
 		5D97AF8820CE5C5D0091D1AC /* Task6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D97AF8720CE5C5D0091D1AC /* Task6.swift */; };
 		5D97AF8A20CE5F950091D1AC /* Task7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D97AF8920CE5F950091D1AC /* Task7.swift */; };
+		5DEEAB1220D92D080002AE47 /* Task 13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEEAB1120D92D080002AE47 /* Task 13.swift */; };
 		5DF9080720CE87B3006E043F /* Task8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF9080620CE87B3006E043F /* Task8.swift */; };
 		5DF9080920CE8D56006E043F /* Task9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF9080820CE8D56006E043F /* Task9.swift */; };
 /* End PBXBuildFile section */
@@ -49,6 +50,7 @@
 		5D97AF8520CE5C4C0091D1AC /* Task5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task5.swift; sourceTree = "<group>"; };
 		5D97AF8720CE5C5D0091D1AC /* Task6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task6.swift; sourceTree = "<group>"; };
 		5D97AF8920CE5F950091D1AC /* Task7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task7.swift; sourceTree = "<group>"; };
+		5DEEAB1120D92D080002AE47 /* Task 13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task 13.swift"; sourceTree = "<group>"; };
 		5DF9080620CE87B3006E043F /* Task8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task8.swift; sourceTree = "<group>"; };
 		5DF9080820CE8D56006E043F /* Task9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task9.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +82,7 @@
 				5D4FB1E620D55892005BD9BE /* Task10.swift */,
 				5D4FB1E820D64CEA005BD9BE /* Task11.swift */,
 				5D4FB1EA20D65524005BD9BE /* Task 12.swift */,
+				5DEEAB1120D92D080002AE47 /* Task 13.swift */,
 			);
 			path = Task;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D97AF8A20CE5F950091D1AC /* Task7.swift in Sources */,
+				5DEEAB1220D92D080002AE47 /* Task 13.swift in Sources */,
 				5DF9080720CE87B3006E043F /* Task8.swift in Sources */,
 				5D4FB1EB20D65524005BD9BE /* Task 12.swift in Sources */,
 				5DF9080920CE8D56006E043F /* Task9.swift in Sources */,

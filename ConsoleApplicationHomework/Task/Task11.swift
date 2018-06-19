@@ -34,6 +34,17 @@ func task11()  {
     var sortedNumbers = [minNumber, inBetween, maxNumber]
     
     
+    if number2 < minNumber {
+        minNumber = number2 }
+    
+    if number3 < minNumber {
+        minNumber = number3
+    }
+    
+    
+    
+    
+    
     for inputNumbers in sortedNumbers {
         print(inputNumbers)
     }

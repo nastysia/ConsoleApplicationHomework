@@ -7,11 +7,12 @@
 //
 
 import Foundation
+
 func task12() {
     print("Введи ціле число.")
-    guard let inputNumber = readLine(), let number = Int(inputNumber) else {
+    guard let inputNumber = readLine(), let n = Int(inputNumber) else {
         return
     }
-    // let arithmeticProgression = []
-    
+    let arithmeticProgression = n * (n - 1) / 2 
+    print (arithmeticProgression)
 }
