@@ -7,7 +7,6 @@
 //
 
 import Foundation
-// зчитати параметр a (ціле число), порахувати вираз і вивести на екран результат: 2*a + 2 - a*a*a
 func task13(){
     print("Введи ціле число.")
     guard let input = readLine(), let a = Int(input) else {
