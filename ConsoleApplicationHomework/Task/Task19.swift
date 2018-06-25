@@ -8,5 +8,11 @@
 
 import Foundation
 func task19(){
-    
+    print("Введи любе дійсне число (якщо дробове, то вводь через крапку.")
+    guard let input = readLine(), let a = Double(input) else {
+        print("А це дійсно число?")
+        return
+    }
+    let adividedBy2 = a / 2
+    print(adividedBy2)
 }

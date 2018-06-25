@@ -8,5 +8,10 @@
 
 import Foundation
 func task16(){
-
+    print("Введи щось на клавіатурі, або число, або фразу.")
+    guard let input = readLine(), let a = Int(input) else {
+            print("Це не число.")
+        return
+    }
+print (a * a)
 }

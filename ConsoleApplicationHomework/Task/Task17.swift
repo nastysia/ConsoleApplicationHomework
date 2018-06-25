@@ -8,5 +8,15 @@
 
 import Foundation
 func task17(){
-    
+    print("Введи два числа через пробіл і натисни Enter.")
+    guard let input = readLine() else {
+        return
+    }
+    let inputnumbers = input.split(separator: " ")
+    guard let a = Int(inputnumbers[0]), let b = Int(inputnumbers[1]) else {
+        print("А це числа?")
+        return
+    }
+    let x = -b / a
+    print(x)
 }

@@ -8,4 +8,11 @@
 
 import Foundation
 func task18(){
+    print("Введи число, натисни Enter і я поділю його на два.")
+    guard let input = readLine(), let a = Int(input) else {
+        print("А це взагалі число?")
+        return
+    }
+    let adividedBy2 = a / 2
+    print(adividedBy2)
 }
