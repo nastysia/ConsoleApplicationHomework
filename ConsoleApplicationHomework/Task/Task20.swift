@@ -18,10 +18,11 @@ func task20() throws {
         return
     }
     
-    let result = a % b
-    
-    guard result != 0, b != 0  else {
+    guard b != 0  else {
         throw TestTaskError.divisionByZero
     }
+    
+    let result = a % b
+    
     print(result)
 }
