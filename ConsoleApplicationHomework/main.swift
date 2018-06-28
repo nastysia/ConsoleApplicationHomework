@@ -11,6 +11,7 @@ import Foundation
 enum TestTaskError: Error {
     case  divisionByZero
 }
+
 do {
     //task0()
     //task1()
@@ -33,8 +34,8 @@ do {
     //task18()
     //task19()
     //try task20()
-    task21()
-    //task22()
+    //task21()
+    task22()
     //task23()
     //task24()
     //task25()

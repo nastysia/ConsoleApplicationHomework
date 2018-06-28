@@ -24,7 +24,7 @@ print("Введи через пробіл кількість зайців і к�
         return
     }
     
-    let result = m % n 
-    print(result)
+    let dilennya = n / m
+    print(dilennya)
     
 }

@@ -23,4 +23,15 @@ func task23() {
         print("Кількість зайців і кількість місць в одній клітці має бути більше нуля.")
         return
     }
+    
+    let ostacha = n % m
+    let dilennyaBezOstachi = n / m
+    
+    if ostacha == 0 {
+        print(dilennyaBezOstachi)
+    }
+    else {
+        print(ostacha)
+    }
+
 }

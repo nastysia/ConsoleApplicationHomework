@@ -7,3 +7,30 @@
 //
 
 import Foundation
+func task24() {
+    print("Введи через пробіл кількість зайців і кількість місць в одній клітці.")
+    
+    guard let input = readLine() else {
+        return
+    }
+    let inputnumbers = input.split(separator: " ")
+    guard let n = Int(inputnumbers[0]), let m = Int(inputnumbers[1]) else {
+        print("А ти точно ввів кількість зайців і кількість місць в одній клітці?")
+        return
+    }
+    
+    guard n >= 0, m > 0 else {
+        print("Кількість зайців і кількість місць в одній клітці має бути більше нуля.")
+        return
+    }
+    
+    let ostacha = n % m
+    let kilkistZajciv = m - ostacha
+    
+    if ostacha == 0 {
+        print(0)
+    }
+    else {
+        print(kilkistZajciv)
+    }
+}
