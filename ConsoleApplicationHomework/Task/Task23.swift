@@ -1,14 +1,14 @@
 //
-//  Task21.swift
+//  Task23.swift
 //  ConsoleApplicationHomework
 //
-//  Created by Anastasiia Derunova on 6/25/18.
+//  Created by Anastasiia Derunova on 6/27/18.
 //  Copyright © 2018 Anastasia. All rights reserved.
 //
 
 import Foundation
-func task21() {
-print("Введи через пробіл кількість зайців і кількість місць в одній клітці.")
+func task23() {
+    print("Введи через пробіл кількість зайців і кількість місць в одній клітці.")
     
     guard let input = readLine() else {
         return
@@ -23,8 +23,4 @@ print("Введи через пробіл кількість зайців і к�
         print("Кількість зайців і кількість місць в одній клітці має бути більше нуля.")
         return
     }
-    
-    let result = m % n 
-    print(result)
-    
 }

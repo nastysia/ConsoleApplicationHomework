@@ -19,6 +19,14 @@
 		5D4FB1E720D55892005BD9BE /* Task10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4FB1E620D55892005BD9BE /* Task10.swift */; };
 		5D4FB1E920D64CEA005BD9BE /* Task11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4FB1E820D64CEA005BD9BE /* Task11.swift */; };
 		5D4FB1EB20D65524005BD9BE /* Task12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4FB1EA20D65524005BD9BE /* Task12.swift */; };
+		5D8CDE4D20E39EA800EA009E /* Task23.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8CDE4C20E39EA800EA009E /* Task23.swift */; };
+		5D8CDE4F20E39EB500EA009E /* Task24.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8CDE4E20E39EB500EA009E /* Task24.swift */; };
+		5D8CDE5120E39EC600EA009E /* Task25.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8CDE5020E39EC600EA009E /* Task25.swift */; };
+		5D8CDE5320E39EE300EA009E /* Task26.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8CDE5220E39EE300EA009E /* Task26.swift */; };
+		5D8CDE5520E39F0100EA009E /* Task27.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8CDE5420E39F0100EA009E /* Task27.swift */; };
+		5D8CDE5720E39F1A00EA009E /* Task28.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8CDE5620E39F1A00EA009E /* Task28.swift */; };
+		5D8CDE5920E39F2900EA009E /* Task29.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8CDE5820E39F2900EA009E /* Task29.swift */; };
+		5D8CDE5B20E39F3600EA009E /* Task30.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8CDE5A20E39F3600EA009E /* Task30.swift */; };
 		5D97AF8020CE5AED0091D1AC /* Task2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D97AF7F20CE5AED0091D1AC /* Task2.swift */; };
 		5D97AF8220CE5C160091D1AC /* Task0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D97AF8120CE5C160091D1AC /* Task0.swift */; };
 		5D97AF8420CE5C320091D1AC /* Task3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D97AF8320CE5C320091D1AC /* Task3.swift */; };
@@ -59,6 +67,14 @@
 		5D4FB1E620D55892005BD9BE /* Task10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task10.swift; sourceTree = "<group>"; };
 		5D4FB1E820D64CEA005BD9BE /* Task11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task11.swift; sourceTree = "<group>"; };
 		5D4FB1EA20D65524005BD9BE /* Task12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task12.swift; sourceTree = "<group>"; };
+		5D8CDE4C20E39EA800EA009E /* Task23.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task23.swift; sourceTree = "<group>"; };
+		5D8CDE4E20E39EB500EA009E /* Task24.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task24.swift; sourceTree = "<group>"; };
+		5D8CDE5020E39EC600EA009E /* Task25.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task25.swift; sourceTree = "<group>"; };
+		5D8CDE5220E39EE300EA009E /* Task26.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task26.swift; sourceTree = "<group>"; };
+		5D8CDE5420E39F0100EA009E /* Task27.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task27.swift; sourceTree = "<group>"; };
+		5D8CDE5620E39F1A00EA009E /* Task28.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task28.swift; sourceTree = "<group>"; };
+		5D8CDE5820E39F2900EA009E /* Task29.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task29.swift; sourceTree = "<group>"; };
+		5D8CDE5A20E39F3600EA009E /* Task30.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task30.swift; sourceTree = "<group>"; };
 		5D97AF7F20CE5AED0091D1AC /* Task2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task2.swift; sourceTree = "<group>"; };
 		5D97AF8120CE5C160091D1AC /* Task0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task0.swift; sourceTree = "<group>"; };
 		5D97AF8320CE5C320091D1AC /* Task3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task3.swift; sourceTree = "<group>"; };
@@ -110,6 +126,14 @@
 				5DF1AC0A20E126D5002D8E55 /* Task20.swift */,
 				5DF1AC0C20E126EA002D8E55 /* Task21.swift */,
 				5DF1AC0E20E126FA002D8E55 /* Task22.swift */,
+				5D8CDE4C20E39EA800EA009E /* Task23.swift */,
+				5D8CDE4E20E39EB500EA009E /* Task24.swift */,
+				5D8CDE5020E39EC600EA009E /* Task25.swift */,
+				5D8CDE5220E39EE300EA009E /* Task26.swift */,
+				5D8CDE5420E39F0100EA009E /* Task27.swift */,
+				5D8CDE5620E39F1A00EA009E /* Task28.swift */,
+				5D8CDE5820E39F2900EA009E /* Task29.swift */,
+				5D8CDE5A20E39F3600EA009E /* Task30.swift */,
 			);
 			path = Task;
 			sourceTree = "<group>";
@@ -202,23 +226,31 @@
 				5DEEAB1220D92D080002AE47 /* Task13.swift in Sources */,
 				5DF1AC0B20E126D5002D8E55 /* Task20.swift in Sources */,
 				4D6B53BE20D9ADF200EC8DC4 /* Task16.swift in Sources */,
+				5D8CDE5520E39F0100EA009E /* Task27.swift in Sources */,
 				5DF9080720CE87B3006E043F /* Task8.swift in Sources */,
 				5D4FB1EB20D65524005BD9BE /* Task12.swift in Sources */,
 				5DF9080920CE8D56006E043F /* Task9.swift in Sources */,
 				5D97AF8420CE5C320091D1AC /* Task3.swift in Sources */,
+				5D8CDE5320E39EE300EA009E /* Task26.swift in Sources */,
 				5DF1AC0D20E126EA002D8E55 /* Task21.swift in Sources */,
 				4D6B53C020D9AE2A00EC8DC4 /* Task17.swift in Sources */,
 				4D51C7D720CBE7E200474F49 /* Task4.swift in Sources */,
 				5D97AF8620CE5C4C0091D1AC /* Task5.swift in Sources */,
+				5D8CDE5920E39F2900EA009E /* Task29.swift in Sources */,
 				4D51C7D520CBE66300474F49 /* Task1.swift in Sources */,
 				5D4FB1E720D55892005BD9BE /* Task10.swift in Sources */,
 				4DF15FFC20CBCE010023C22E /* main.swift in Sources */,
 				5D97AF8220CE5C160091D1AC /* Task0.swift in Sources */,
 				4D6B53C420D9AE5200EC8DC4 /* Task19.swift in Sources */,
+				5D8CDE5120E39EC600EA009E /* Task25.swift in Sources */,
 				4D6B53C220D9AE3D00EC8DC4 /* Task18.swift in Sources */,
 				5D97AF8020CE5AED0091D1AC /* Task2.swift in Sources */,
 				5D4FB1E920D64CEA005BD9BE /* Task11.swift in Sources */,
 				5DF1AC0F20E126FA002D8E55 /* Task22.swift in Sources */,
+				5D8CDE4D20E39EA800EA009E /* Task23.swift in Sources */,
+				5D8CDE4F20E39EB500EA009E /* Task24.swift in Sources */,
+				5D8CDE5B20E39F3600EA009E /* Task30.swift in Sources */,
+				5D8CDE5720E39F1A00EA009E /* Task28.swift in Sources */,
 				5D97AF8820CE5C5D0091D1AC /* Task6.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
