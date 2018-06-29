@@ -7,3 +7,6 @@
 //
 
 import Foundation
+func task27 () {
+    
+}
