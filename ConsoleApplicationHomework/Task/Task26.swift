@@ -18,11 +18,6 @@ func task26 () {
         return
     }
     
-    guard tobehours >= 0, minutes >= 0 else {
-        print ("Кількість хвилин має бути додатньою.")
-        return
-    }
-    
     let ostacha = minutes % 60
     let addedhours = minutes / 60
     let hours = tobehours + addedhours
@@ -36,9 +31,10 @@ func task26 () {
     
     let newostacha = newminutes % 60
     let newhours = newminutes / 60
+    let totalminutes = (ostacha + newostacha) % 60
+    let totalhours = hours + newhours + (totalminutes / 60)
     
-    //let printhours = (hours + newhours)
     
-   print("\(hours + newhours) h \(ostacha + newostacha) min.")
+   print("\(totalhours) h \(totalminutes) min.")
     
 }
