@@ -8,24 +8,35 @@
 
 import Foundation
 func task26 () {
-    print("Введи кількість годин і хивлин.")
+    print("Введи кількість годин і хвилин через пробіл.")
     guard let input = readLine() else {
         return
     }
     let inputnumbers = input.split(separator: " ")
-    guard let hours = Int(inputnumbers[0]), let minutes = Int(inputnumbers[1]), minutes < 60 else {
+    guard let tobehours = Int(inputnumbers[0]), let minutes = Int(inputnumbers[1]) else {
         print("А ти точно ввів число годин та хвилин?")
         return
     }
     
-    print("Введи кількість хвилин.")
-    guard let newinput = readLine(), let newminutes = Int(newinput), newminutes < 60 else {
-        print("А ти точно ввів число годин та хвилин?")
+    guard tobehours >= 0, minutes >= 0 else {
+        print ("Кількість хвилин має бути додатньою.")
         return
     }
     
+    let ostacha = minutes % 60
+    let addedhours = minutes / 60
+    let hours = tobehours + addedhours
+ 
     
+    print("Добре. А тепер введи кількість хвилин.")
+    guard let newinput = readLine(), let newminutes = Int(newinput) else {
+        print("А ти точно ввів хвилини?")
+        return
+    }
     
+    let newostacha = minutes % 60
+    let newhours = minutes / 60
     
+   print("\(hours + newhours) h \(ostacha + newostacha) min.")
     
 }
