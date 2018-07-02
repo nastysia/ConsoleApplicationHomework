@@ -32,7 +32,8 @@ func task26 () {
     let newostacha = newminutes % 60
     let newhours = newminutes / 60
     let totalminutes = (ostacha + newostacha) % 60
-    let totalhours = hours + newhours + totalminutes
+    let hourstoadd = (ostacha + newostacha) / 60
+    let totalhours = hours + newhours + hourstoadd
     
    print("\(totalhours) h \(totalminutes) min.")
     
