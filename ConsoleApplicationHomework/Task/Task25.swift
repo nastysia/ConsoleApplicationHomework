@@ -10,12 +10,7 @@ import Foundation
 func task25() {
     print("Введи кількість хвилин.")
     
-    guard let input = readLine(), let minutes = Int(input) else {
-        return
-    }
-    
-    guard minutes >= 0 else {
-        print ("Кількість хвилин має бути додатньою.")
+    guard let input = readLine(), let minutes = Int(input), minutes >= 0 else {
         return
     }
     

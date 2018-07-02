@@ -13,7 +13,7 @@ func task28 () {
         return
     }
     let inputnumbers = input.split(separator: " ")
-    guard let tobehours = Int(inputnumbers[0]), let minutes = Int(inputnumbers[1]) else {
+    guard let tobehours = Int(inputnumbers[0]), let minutes = Int(inputnumbers[1]), tobehours >= 0, minutes >= 0 else {
         print("А ти точно ввів число годин та хвилин?")
         return
     }
@@ -29,7 +29,7 @@ func task28 () {
     }
     
     let newinputnumbers = newinput.split(separator: " ")
-    guard let newinputhours = Int(newinputnumbers[0]), let newminutes = Int(newinputnumbers[1]) else {
+    guard let newinputhours = Int(newinputnumbers[0]), let newminutes = Int(newinputnumbers[1]), newinputhours >= 0, newminutes >= 0 else {
         print("А ти точно ввів хвилини?")
         return
     }
@@ -37,6 +37,7 @@ func task28 () {
     let newostacha = newminutes % 60
     let newaddedhours = newminutes / 60
     let newhours = newinputhours + newaddedhours
+    
     let totalminutes = (ostacha + newostacha) % 60
     let hourstoadd = (ostacha + newostacha) / 60
     let totalhours = hours + newhours + hourstoadd

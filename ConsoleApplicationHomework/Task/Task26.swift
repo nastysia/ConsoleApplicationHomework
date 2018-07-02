@@ -13,7 +13,7 @@ func task26 () {
         return
     }
     let inputnumbers = input.split(separator: " ")
-    guard let tobehours = Int(inputnumbers[0]), let minutes = Int(inputnumbers[1]) else {
+    guard let tobehours = Int(inputnumbers[0]), let minutes = Int(inputnumbers[1]), tobehours >= 0, minutes >= 0 else {
         print("А ти точно ввів число годин та хвилин?")
         return
     }
@@ -24,7 +24,7 @@ func task26 () {
  
     
     print("Добре. А тепер введи кількість хвилин.")
-    guard let newinput = readLine(), let newminutes = Int(newinput) else {
+    guard let newinput = readLine(), let newminutes = Int(newinput), newminutes >= 0 else {
         print("А ти точно ввів хвилини?")
         return
     }
