@@ -39,9 +39,9 @@ do {
     //task23()
     //task24()
     //task25()
-    task26()
+    //task26()
     //task27()
-    //task28()
+    task28()
     //task29()
     //task30()
 } catch TestTaskError.divisionByZero {
