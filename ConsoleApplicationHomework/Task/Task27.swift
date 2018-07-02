@@ -1,11 +1,3 @@
-//
-//  Task27.swift
-//  ConsoleApplicationHomework
-//
-//  Created by Anastasiia Derunova on 6/27/18.
-//  Copyright © 2018 Anastasia. All rights reserved.
-//
-
 import Foundation
 func task27 () {
     print("Введи кількість годин і хвилин через пробіл.")
@@ -18,7 +10,7 @@ func task27 () {
         return
     }
     
-    let ostacha = minutes % 60
+    let ostacha = minutes % 59
     let addedhours = minutes / 60
     let hours = tobehours + addedhours
     
@@ -29,11 +21,11 @@ func task27 () {
         return
     }
     
-    let newostacha = newminutes % 60
+    let newostacha = newminutes % 59
     let newhours = newminutes / 60
-    let totalminutes = (ostacha - newostacha) % 60
-    let totalhours = hours - newhours - (totalminutes / 60)
-    
+    let totalminutes = (ostacha - newostacha) % 59
+    let totalhours = hours - newhours - totalminutes
     
     print("\(totalhours) h \(totalminutes) min.")
+    
 }
