@@ -9,9 +9,11 @@
 import Foundation
 func task15(){
     print("Введи щось на клавіатурі, або число, або фразу.")
-    guard let input =  readLine(), let output = Int(input) else {
+    guard let input = readLine() else {
         print("Це не число.")
         return
     }
-    print(output)
+    let count = input.count
+    
+    print(count)
 }
