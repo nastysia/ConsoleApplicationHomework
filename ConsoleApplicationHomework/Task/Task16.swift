@@ -13,5 +13,6 @@ func task16(){
             print("Це не число.")
         return
     }
-print (a * a)
+//let counted = a.count
+//print (counted * counted)
 }
