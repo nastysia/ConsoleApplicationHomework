@@ -19,5 +19,13 @@ func task17(){
     }
     let x = -b / a
     
-    print(x)
+    if  a == 0 && b == 0 {
+        print("Безліч розв'язків.")
+    }
+    else if  a == 0 {
+        print("Не існує розв'язків.")
+    }
+    else {
+        print(x)
+    }
 }
