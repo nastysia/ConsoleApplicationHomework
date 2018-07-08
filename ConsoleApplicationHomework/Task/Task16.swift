@@ -9,10 +9,12 @@
 import Foundation
 func task16(){
     print("Введи щось на клавіатурі, або число, або фразу.")
-    guard let input = readLine(), let a = Int(input) else {
-            print("Це не число.")
+    guard let input = readLine(), let integer = Int(input) else {
+        print("Це не число.")
         return
     }
-//let counted = a.count
-//print (counted * counted)
+    let dobutok = integer * integer
+    let counted = input.count
+
+    print(counted)
 }
