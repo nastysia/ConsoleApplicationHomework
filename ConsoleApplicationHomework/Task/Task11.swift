@@ -14,7 +14,7 @@ func task11(){
         return
     }
     let inputNumbers = input.split(separator: " ")
-    guard let number1 = Int(inputNumbers[0]), let number2 = Int(inputNumbers[1]), let number3 = Int(inputNumbers[2]) else {
+    guard let n1 = Int(inputNumbers[0]), let n2 = Int(inputNumbers[1]), let n3 = Int(inputNumbers[2]) else {
         return
     }
     /*
@@ -28,28 +28,27 @@ func task11(){
      3 2 1
      */
     
-    var minNumber = number1
-    var inBetween = number2
-    var maxNumber = number3
-    
-    
-    if number2 < minNumber {
-        minNumber = number2 }
-
-    if number3 < minNumber {
-        minNumber = number3
+    if n1 <= n2, n2 <= n3, n1 <= n3 {
+        print(n1, n2, n3)
     }
-    
-    
-    
-    
-    
-    
-
-        print(inputNumbers)
+    else if n1 <= n2, n1 <= n3, n3 <= n2 {
+        print(n1, n3, n2)
     }
-    
-    
+    else if n2 <= n1, n2 <= n3, n1 <= n3 {
+        print(n2, n1, n3)
+    }
+    else if n2 <= n3, n2 <= n1, n3 <= n1 {
+        print(n2, n3, n1)
+    }
+    else if n3 <= n1, n3 <= n2, n1 <= n2 {
+        print(n3, n1, n2)
+    }
+    else if n3 <= n2, n3 <= n1, n2 <= n1 {
+        print(n3, n2, n1)
+    }
+}
+
+
 
 
 
