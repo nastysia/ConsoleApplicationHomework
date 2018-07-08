@@ -13,10 +13,11 @@ func task17(){
         return
     }
     let inputnumbers = input.split(separator: " ")
-    guard let a = Int(inputnumbers[0]), let b = Int(inputnumbers[1]) else {
+    guard let a = Double(inputnumbers[0]), let b = Double(inputnumbers[1]) else {
         print("А це числа?")
         return
     }
     let x = -b / a
+    
     print(x)
 }
