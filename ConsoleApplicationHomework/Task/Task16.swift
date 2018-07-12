@@ -13,8 +13,10 @@ func task16(){
         print("Це не число.")
         return
     }
+    
     let dobutok = integer * integer
-    let counted = input.count
-
+    let string = String(dobutok)
+    let counted = string.count
+    
     print(counted)
 }
