@@ -9,9 +9,9 @@
 import Foundation
 func task14(){
     print("Введи ціле число.")
-    guard let input = readLine(), let a = Int(input) else {
+    guard let input = readLine(), let a = Double(input) else {
     return
     }
-    let result = (2 * a + 2 - a * a * a) / (a - 1)
+    let result = (((2 * a) + 2) - (a * a * a)) / (a - 1)
     print (result)
 }
