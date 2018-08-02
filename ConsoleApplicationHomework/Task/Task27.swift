@@ -17,12 +17,12 @@ func task27 () {
     }
     
     if (firstminutes - secondminutes) < 0  {
-        let minutes = firsthour * 60 + (firstminutes - secondminutes)
+        let minutes = 60 + (firstminutes - secondminutes)
         let hours = firsthour - 1
         print("\(hours) h \(minutes) min.")
     }
     
-    else if (firstminutes - secondminutes) > 0  {
+    else {
         let minutes = (firstminutes - secondminutes) % 60
         let hours = firsthour + (firstminutes - secondminutes) / 60
        print("\(hours) h \(minutes) min.") 
