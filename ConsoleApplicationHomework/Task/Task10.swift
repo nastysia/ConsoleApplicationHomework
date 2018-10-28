@@ -8,7 +8,7 @@
 
 import Foundation
 
-func sort2( firstInt a:  inout Int, secondInt b: inout Int) {
+func sort2(firstInt a:  inout Int, secondInt b: inout Int) {
     if a > b {
         swap(&a, &b)
     }

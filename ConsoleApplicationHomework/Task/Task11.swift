@@ -8,44 +8,26 @@
 
 import Foundation
 
-func task11(){ 
+func sort3(firstInt a:  inout Int, secondInt b: inout Int, thirdInt c: inout Int) {
+    sort2(firstInt: &a, secondInt: &b)
+    sort2(firstInt: &a, secondInt: &c)
+    sort2(firstInt: &b, secondInt: &c)
+}
+
+func task11(){
+    
     print ("Введи три цілі числа через пробіл.")
     guard let input = readLine() else {
         return
     }
     let inputNumbers = input.split(separator: " ")
-    guard let n1 = Int(inputNumbers[0]), let n2 = Int(inputNumbers[1]), let n3 = Int(inputNumbers[2]) else {
+    guard var n1 = Int(inputNumbers[0]), var n2 = Int(inputNumbers[1]), var n3 = Int(inputNumbers[2]) else {
         return
     }
-    /*
-     1 2 3
-     1 3 2
-     
-     2 1 3
-     2 3 1
-     
-     3 1 2
-     3 2 1
-     */
+
+    sort3(firstInt: &n1, secondInt: &n2, thirdInt: &n3)
+    print(n1, n2, n3)
     
-    if n1 <= n2, n2 <= n3, n1 <= n3 {
-        print(n1, n2, n3)
-    }
-    else if n1 <= n2, n1 <= n3, n3 <= n2 {
-        print(n1, n3, n2)
-    }
-    else if n2 <= n1, n2 <= n3, n1 <= n3 {
-        print(n2, n1, n3)
-    }
-    else if n2 <= n3, n2 <= n1, n3 <= n1 {
-        print(n2, n3, n1)
-    }
-    else if n3 <= n1, n3 <= n2, n1 <= n2 {
-        print(n3, n1, n2)
-    }
-    else if n3 <= n2, n3 <= n1, n2 <= n1 {
-        print(n3, n2, n1)
-    }
 }
 
 
