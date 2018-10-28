@@ -8,7 +8,7 @@
 
 import Foundation
 
-func sort2(firstInt a:  inout Int, secondInt b: inout Int) {
+func sort2(first a:  inout Int, second b: inout Int) {
     if a > b {
         swap(&a, &b)
     }
@@ -24,7 +24,7 @@ func task10() {
         return
     }
 
-    sort2(firstInt: &number1, secondInt: &number2)
+    sort2(first: &number1, second: &number2)
     
     print (number1, number2)
     

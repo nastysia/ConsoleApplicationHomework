@@ -8,10 +8,10 @@
 
 import Foundation
 
-func sort3(firstInt a:  inout Int, secondInt b: inout Int, thirdInt c: inout Int) {
-    sort2(firstInt: &a, secondInt: &b)
-    sort2(firstInt: &a, secondInt: &c)
-    sort2(firstInt: &b, secondInt: &c)
+func sort3(first a:  inout Int, second b: inout Int, third c: inout Int) {
+    sort2(first: &a, second: &b)
+    sort2(first: &a, second: &c)
+    sort2(first: &b, second: &c)
 }
 
 func task11(){
@@ -25,7 +25,7 @@ func task11(){
         return
     }
 
-    sort3(firstInt: &n1, secondInt: &n2, thirdInt: &n3)
+    sort3(first: &n1, second: &n2, third: &n3)
     print(n1, n2, n3)
     
 }
