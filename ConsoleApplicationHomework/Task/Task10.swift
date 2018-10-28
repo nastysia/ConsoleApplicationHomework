@@ -9,10 +9,9 @@
 import Foundation
 
 func sort2( firstInt a:  inout Int, secondInt b: inout Int) {
-    let maxNumber = max(a, b)
-    let minNumber = min(a, b)
-    a = minNumber
-    b = maxNumber
+    if a > b {
+        swap(&a, &b)
+    }
 }
 
 func task10() {
