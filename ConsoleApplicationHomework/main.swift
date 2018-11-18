@@ -42,12 +42,13 @@ do {
     //task26()
     //task27()
     //task28()
-    task29()
+    //task29()
     //task30()
     //task31()
     //task32()
     //task33()
-    //task34()
+    task34()
 } catch TestTaskError.divisionByZero {
     print("Fatal error: Division By Zero")
 }
+
