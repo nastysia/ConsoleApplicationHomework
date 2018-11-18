@@ -7,3 +7,8 @@
 //
 
 import Foundation
+func task34 () {
+    for numbers in 1...100 {
+        print(numbers)
+    }
+}
