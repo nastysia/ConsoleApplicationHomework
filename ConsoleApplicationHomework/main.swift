@@ -24,7 +24,7 @@ do {
     //task8()
     //task9()
     //task10()
-    task11()
+    //task11()
     //task12()
     //task13()
     //task14()
@@ -47,7 +47,13 @@ do {
     //task31()
     //task32()
     //task33()
-    task34()
+    //task34()
+    task35()
+    //task36()
+    //task37()
+    //task38()
+    //task39()
+    //task40()
 } catch TestTaskError.divisionByZero {
     print("Fatal error: Division By Zero")
 }
