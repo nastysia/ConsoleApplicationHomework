@@ -8,5 +8,8 @@
 
 import Foundation
 func task38() {
-    
+    for character in "abcde" {
+        print(character)
+    }
+   
 }
