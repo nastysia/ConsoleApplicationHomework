@@ -13,7 +13,7 @@ func task30 ()  {
         return
     }
     let inputnumbers = input.split(separator: " ")
-    guard let firstday = Int(inputnumbers[0]), let firsthour = Int(inputnumbers[1]), let firstminutes = Int(inputnumbers[2]), firstday >= 0, firsthour >= 0, firstminutes >= 0 else {
+    guard let firstdays = Int(inputnumbers[0]), let firsthours = Int(inputnumbers[1]), let firstminutes = Int(inputnumbers[2]), firstdays >= 0, firsthours >= 0, firstminutes >= 0 else {
         print("А ти точно ввів число годин та хвилин?")
         return
     }
@@ -23,20 +23,17 @@ func task30 ()  {
         return
     }
     let secondnumbers = secondinput.split(separator: " ")
-    guard let secondday = Int(secondnumbers[0]), let secondhour = Int(secondnumbers[1]), let secondminutes = Int(secondnumbers[2]), secondday >= 0, secondhour >= 0,  secondminutes >= 0  else {
+    guard let seconddays = Int(secondnumbers[0]), let secondhours = Int(secondnumbers[1]), let secondminutes = Int(secondnumbers[2]), seconddays >= 0, secondhours >= 0,  secondminutes >= 0  else {
         print("А ти точно ввів години і хвилини?")
         return
     }
     
-    let hours = firsthour + secondhour + (firstminutes + secondminutes) / 60
+    var hours = firsthours + secondhours + (firstminutes + secondminutes) / 60
     let minutes = (firstminutes + secondminutes) % 60
     var days: Int
     
-    if hours == 24 {
-        days = firstday + secondday + hours/24
-    }
-        else { days = firstday + secondday
-    }
+        days = firstdays + seconddays + hours/24
+        hours = hours % 24
     
     print("\(days) d \(hours) h \(minutes) min.")
     
